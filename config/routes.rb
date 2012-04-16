@@ -1,4 +1,12 @@
 ContractON::Application.routes.draw do
+  resources :companies
+
+
+  get "company/signup"
+
+  match '/signup', to: 'company#signup'
+  match '/show', to: 'company#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
