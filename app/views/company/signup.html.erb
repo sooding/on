@@ -1,0 +1,23 @@
+<h1>Company signup</h1>
+<h2>This is page for company signup</h2>
+<div class="row">
+	<div class="span6 offset3">
+		<%=form_for(@company) do |c| %>
+
+			<%=c.label :name %>
+			<%=c.text_field :name %>
+
+			<%=c.label :industry %>
+			<%=c.text_field :industry %>
+
+			<%=c.label :password %>
+			<%=c.password_field :password %>
+
+			<%=c.label :password_confirmation, "Confirmation" %>
+			<%=c.password_field :password_confirmation %>
+
+			<%=c.submit "Create your account", class: "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>
+<%=link_to "Company Profile", show_path %>
