@@ -1,11 +1,13 @@
 ContractON::Application.routes.draw do
   resources :companies
-
+  resources :sessions, only: [:new, :create, :destroy]
 
   get "company/signup"
 
   match '/signup', to: 'company#signup'
   match '/show', to: 'company#show'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
