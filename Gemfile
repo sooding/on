@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'bcrypt-ruby', '3.0.1'
 
-<<<<<<< HEAD
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -11,16 +11,11 @@ group :development do
  gem 'sqlite3', '1.3.5'
  gem 'rspec-rails', '2.9.0'
  gem 'annotate', '~> 2.4.1.beta'
+ gem 'guard-rspec', '0.5.5'
 end
 
 group :test do
 
-=======
-group :development do
-  gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.9.0'
-  gem 'guard-rspec', '0.5.5'
->>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
 end
 
 # Gems used only for assets and not required
@@ -39,7 +34,6 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fchange', '0.0.5'
   gem 'rb-notifu', '0.0.4'
-  gem 'win32console', '1.3.0'
 end 
 
 group :production do

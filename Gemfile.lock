@@ -71,7 +71,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.2.0)
+    nokogiri (1.5.2)
     nokogiri (1.5.2-x86-mingw32)
+    pg (0.12.2)
     pg (0.12.2-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -115,10 +117,7 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.9.0)
-<<<<<<< HEAD
-=======
     rubyzip (0.9.7)
->>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
     sass (3.1.15)
     sass-rails (3.2.4)
       railties (~> 3.2.0)
@@ -144,7 +143,6 @@ GEM
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    win32console (1.3.0-x86-mingw32)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -153,26 +151,17 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-<<<<<<< HEAD
   annotate (~> 2.4.1.beta)
   bcrypt-ruby (= 3.0.1)
-=======
   capybara (= 1.1.2)
->>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
   coffee-rails (= 3.2.2)
   guard-rspec (= 0.5.5)
   jquery-rails (= 2.0.0)
   pg (= 0.12.2)
   rails (= 3.2.3)
-<<<<<<< HEAD
-  rspec-rails (= 2.9.0)
-  sass-rails (= 3.2.5)
-=======
   rb-fchange (= 0.0.5)
   rb-notifu (= 0.0.4)
   rspec-rails (= 2.9.0)
   sass-rails (= 3.2.4)
->>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
   sqlite3 (= 1.3.5)
   uglifier (= 1.2.3)
-  win32console (= 1.3.0)
