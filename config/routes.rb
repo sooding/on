@@ -1,4 +1,7 @@
 ContractON::Application.routes.draw do
+  resources :contractors
+
+  match '/signup', to: 'contractors#signup'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
