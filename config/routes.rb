@@ -1,7 +1,20 @@
 ContractON::Application.routes.draw do
+<<<<<<< HEAD
   resources :contractors
 
   match '/signup', to: 'contractors#signup'
+=======
+  get "static_pages/home"
+
+  resources :companies
+
+
+  get "company/signup"
+
+  match '/signup', to: 'company#signup'
+  match '/show', to: 'company#show'
+
+>>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
