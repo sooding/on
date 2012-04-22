@@ -4,8 +4,13 @@ ContractON::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
  
 
+  root to: 'static_pages#home'
+
+  get "static_pages/home"
+
   resources :contractors
   match '/signup', to: 'contractors#signup'
+<<<<<<< HEAD
   #get "static_pages/home"
   #resources :companies
   get "contractors/signup" 
@@ -15,6 +20,16 @@ ContractON::Application.routes.draw do
   match '/cshow', to: 'company#show'
   match '/csignin', to: 'sessions#new'
   match '/csignout', to: 'sessions#destroy', via: :delete
+=======
+  get "static_pages/home"
+
+  resources :companies
+  get "contractors/signup" 
+  get "company/signup"
+
+  match '/signup', to: 'company#signup'
+  match '/show', to: 'company#show'
+>>>>>>> 12cdededfa2f91a1b50df119f4c8cfd1ca619a6a
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -65,7 +80,7 @@ ContractON::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-    root :to => "static_pages#home"
+ 
 
   # See how all your routes lay out with "rake routes"
 

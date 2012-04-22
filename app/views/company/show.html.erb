@@ -11,11 +11,18 @@
 	
 		
        </tr>
+<<<<<<< HEAD
        <tr> <%@Company.each do |c| %>
                 <td><%= c.name %></td>
 		<td><%= c.industry %></td>
 		<td><%=link_to "Enter", '#'%></td>
 		
+=======
+       <tr>
+        <td><%= @Company.name %></td>
+		<td><%= @Company.industry %></td>
+		<td><%=link_to "Edit", '#'%></td>
+>>>>>>> 12cdededfa2f91a1b50df119f4c8cfd1ca619a6a
 	</tr>
 
       <% end %>
