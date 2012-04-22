@@ -19,18 +19,13 @@ class SessionsController < ApplicationController
 		  render 'new'
 	   end
 		 
-   end
-   
+    end
    #def show
 	#   current_company()
 	 #  com = @current_company
   # end
    def destroy
+	   sign_out
+	   redirect_to root_path
    end
-
-
-
-
-
-
 end
