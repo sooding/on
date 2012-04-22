@@ -5,12 +5,13 @@ class SessionsController < ApplicationController
 
    def create
 	   company = Company.find_by_name(params[:session][:name])
-	   if company && company.authenticate(params[:session][:password])
-		   #redirect_to 
-	   else 
-                   flash[:error] = 'Invalid email/password combination'
-		   render 'new'
-	   end
+	   #if company && company.authenticate(params[:session][:name])
+		   sign_in company
+		  redirect_to company 
+	   #else 
+                   #flash.now[:error] = 'Invalid email/password combination'
+		   #render 'new'
+	   #end
 		 
    end
 

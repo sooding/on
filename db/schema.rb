@@ -11,14 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120416214603) do
+ActiveRecord::Schema.define(:version => 20120421021927) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
     t.string   "industry"
     t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "remember_token"
+  end
+
+  add_index "companies", ["remember_token"], :name => "index_companies_on_remember_token"
+
+  create_table "contractors", :force => true do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "email"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
   end
 
 end

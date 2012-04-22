@@ -8,15 +8,17 @@
 	<tr>
 		<th>Name</th>
 		<th>Industry</th>
+	
 		
        </tr>
-       <tr>
-                <td><%= @Company.name %></td>
-		<td><%= @Company.industry %></td>
-		<td><%=link_to "Edit", '#'%></td>
+       <tr> <%@Company.each do |c| %>
+                <td><%= c.name %></td>
+		<td><%= c.industry %></td>
+		
+		
 	</tr>
 
-
+      <% end %>
 </table>
 	</div>
 </div>
