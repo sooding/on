@@ -10,7 +10,7 @@ ContractON::Application.routes.draw do
 
   resources :contractors
   match '/signup', to: 'contractors#signup'
-<<<<<<< HEAD
+
   #get "static_pages/home"
   #resources :companies
   get "contractors/signup" 
@@ -20,7 +20,7 @@ ContractON::Application.routes.draw do
   match '/cshow', to: 'company#show'
   match '/csignin', to: 'sessions#new'
   match '/csignout', to: 'sessions#destroy', via: :delete
-=======
+
   get "static_pages/home"
 
   resources :companies
@@ -29,7 +29,7 @@ ContractON::Application.routes.draw do
 
   match '/signup', to: 'company#signup'
   match '/show', to: 'company#show'
->>>>>>> 12cdededfa2f91a1b50df119f4c8cfd1ca619a6a
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
