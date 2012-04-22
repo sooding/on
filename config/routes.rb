@@ -1,14 +1,15 @@
 ContractON::Application.routes.draw do
+<<<<<<< HEAD
   root to: 'static_pages#home'
 
   get "static_pages/home"
 
-  get "contractors/show"
-  get "contractors/signup"
+  resources :contractors
+  match '/signup', to: 'contractors#signup'
+  get "static_pages/home"
 
   resources :companies
-
-
+  get "contractors/signup" 
   get "company/signup"
 
   match '/signup', to: 'company#signup'
@@ -63,7 +64,7 @@ ContractON::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+ 
 
   # See how all your routes lay out with "rake routes"
 

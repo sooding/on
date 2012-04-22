@@ -11,6 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20120416215901) do
+
+  create_table "contractors", :force => true do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "email"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
+=======
 ActiveRecord::Schema.define(:version => 20120416214603) do
 
   create_table "companies", :force => true do |t|
@@ -19,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20120416214603) do
     t.string   "password"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+>>>>>>> e45972aaccb54818b434eac587f8f3231184a3af
   end
 
 end

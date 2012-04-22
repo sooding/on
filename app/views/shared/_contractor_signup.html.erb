@@ -1,0 +1,21 @@
+<%= form_for(contractor) do |f| %>
+  <div class="field">
+    <%= f.label :firstName, "First Name" %><br />
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastName, "Last Name" %><br />
+    <%= f.text_field :lastName %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit signup_message %>
+  </div>
+<% end %>
