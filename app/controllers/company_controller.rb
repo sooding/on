@@ -10,7 +10,7 @@ class CompanyController < ApplicationController
   end
 
   def show
-	  @Company =Company.find(1)
+	  @Company = Company.find(1)
   end
 end
 
