@@ -10,7 +10,7 @@ class CompaniesController < ApplicationController
   end
 
   def show
-	  @Company =Company.all
+	  @Company =Company.find(params[:id])
   end
 end
 

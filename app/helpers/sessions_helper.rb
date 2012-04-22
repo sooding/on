@@ -18,8 +18,8 @@ module SessionsHelper
 	private 
 
 	  def company_from_remember_token
-		  @remember_token = cookies[:remember_token]
-		  Company.find_by_remember_token(@remember_token)
+		  remember_token = cookies[:remember_token]
+		  Company.find_by_remember_token(remember_token) unless remember_token.nil?
 	  end
 
 end
