@@ -1,21 +1,16 @@
-<%= form_for(contractor) do |f| %>
-  <div class="field">
-    <%= f.label :firstName, "First Name" %><br />
-    <%= f.text_field :firstName %>
-  </div>
-  <div class="field">
-    <%= f.label :lastName, "Last Name" %><br />
-    <%= f.text_field :lastName %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="actions">
-    <%= f.submit signup_message %>
-  </div>
+<div class = "hero-unit">
+<%= form_for @contractor, :html => {:class => "form-horizontal"} do |f| %>
+    <legend>Sign Up</legend>
+
+    <%= f.label :firstName, "First Name" %>
+    <%= f.text_field :firstName %> 
+    <%= f.label :lastName, "Last Name" %>
+    <%= f.text_field :lastName %> 
+    <%= f.label :email %>
+    <%= f.text_field :email %> 
+    <%= f.label :password %>
+    <%= f.password_field :password %> <br /> <br /> 
+    <%= f.submit signup_message, class: "btn" %>
+
 <% end %>
+</div>
