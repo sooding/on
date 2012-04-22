@@ -1,5 +1,5 @@
 ContractON::Application.routes.draw do
-<<<<<<< HEAD
+
   root to: 'static_pages#home'
 
   get "static_pages/home"
