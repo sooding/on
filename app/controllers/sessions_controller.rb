@@ -4,17 +4,27 @@ class SessionsController < ApplicationController
    end
 
    def create
-	   company = Company.find_by_name(params[:session][:name])
-	   #if company && company.authenticate(params[:session][:name])
+	   #current_company()
+	 company = Company.find_by_name(params[:session][:name])
+	 #password = Company.find_by_name(params[:session][:name]).password
+	 #company.update_attributes(industy: "TEXT")
+	 #Company.create(name: company.name, industry: "test")
+	 #@company.
+	 # @current_company = @company
+	   if company && company.password ==params[:session][:password]
 		   sign_in company
-		  redirect_to company 
-	   #else 
-                   #flash.now[:error] = 'Invalid email/password combination'
-		   #render 'new'
-	   #end
+		   redirect_to company 
+	  else 
+                 flash.now[:error] = 'Invalid email/password combination'
+		  render 'new'
+	   end
 		 
    end
-
+   
+   #def show
+	#   current_company()
+	 #  com = @current_company
+  # end
    def destroy
    end
 

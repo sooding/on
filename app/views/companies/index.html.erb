@@ -13,10 +13,11 @@
 			<%=c.label :password %>
 			<%=c.password_field :password %>
 
-		
+			<%=c.label :password_confirmation, "Confirmation" %>
+			<%=c.password_field :password_confirmation %>
 
 			<%=c.submit "Create your account", class: "btn btn-large btn-primary" %>
 		<% end %>
 	</div>
 </div>
-<%=link_to "Company Profile", cshow_path %>
+

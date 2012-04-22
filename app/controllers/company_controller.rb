@@ -13,6 +13,7 @@ class CompanyController < ApplicationController
 
 	  @Company =Company.all
 
+
 	  @Company = Company.find(1)
 
   end
